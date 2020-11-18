@@ -1,0 +1,2 @@
+Select distinct  aa.idFilial,  Cast(aa.xUnid As Int) As idUnid,  aa.idEvento , aa.INICIO, aa.EVENTO, aa.Local, aa.FONE , aa.qtd_USB, aa.qtd_USA, aa.CONTRATANTE, aa.Termino   From (cRet) aa  left JOIN  UNIDADEMOVEL UNI  ON aa.idfilial == UNI.idFilial AND INT(VAL(aa.xUnid))= UNI.unidade   left JOIN  UNIDADEMOVEL UNI2 ON INT(VAL(aa.xUnid))= = UNI2.unidade  
+Error in line 47: Missing operand.

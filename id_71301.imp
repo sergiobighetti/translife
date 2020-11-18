@@ -1,0 +1,36 @@
+*---Importação do TXT para ID 71301 (PROTESTE)
+Lparameters cTXTOrigem, cAlsRecebedor
+
+Local cLV_TMP, nSel, aLnh[1]
+
+nSel    = Select()
+cLV_TMP = Sys(2015)
+
+Create Cursor (cLV_TMP) (linha C(240) )
+Append From (cTXTOrigem) Sdf
+
+Select (cLV_TMP)
+Scan all
+
+   IF EMPTY(linha)
+      LOOP
+   ENDIF 
+   
+   *Exemplo de linha:   CODIGO,NOME,CPF: ---> 000710423;JOSE CICERO RODRIGUES DO NASCIMENTO;31099254434
+   =Alines( aLnh, Alltrim( &cLV_TMP..linha ),1,';' )
+
+   Select (cAlsRecebedor)
+   Append Blank
+   Replace TIPO       With '1'
+   Replace Nome       With aLnh[2]
+   Replace CPF        With IIF( ALEN(aLnh,1)=3, aLnh[3], '' )
+   Replace CODIGOTIT  With aLnh[1]
+   Replace ATEND      With 1
+   Replace ACAO       With 1
+   Go Top
+
+   Select (cLV_TMP)
+Endscan
+
+Use In (Select(cLV_TMP))
+Select (nSel)

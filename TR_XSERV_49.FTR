@@ -1,0 +1,7 @@
+LPARAM  cPaciente, cCart, cDtTransp, cTpRecurso, cOriDes, nKM, nVlrKM, cDtVcto, nVlrRemo
+LOCAL cTXT
+cTXT = ''
+TEXT TO cTXT TEXTMERGE NOSHOW
+<<ALLTRIM(cPaciente)>> Cartão: <<cCart>> Data: <<cDtTransp>> Recurso: <<cTpRecurso>> <<cOriDes>> <<nKM>> km a R$ << ALLTRIM(TRANSFORM(nVlrKM,'999999.99'))>> = R$ <<ALLTRIM(TRANSFORM(nKM*nVlrKM,'999999.99'))>> Vencimento: <<cDtVcto>> Total da remoção = R$ <<ALLTRIM(TRANSFORM(nVlrRemo,'999,999,999.99'))>>
+ENDTEXT 
+RETURN cTXT

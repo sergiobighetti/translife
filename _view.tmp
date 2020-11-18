@@ -1,0 +1,11 @@
+
+Views in Database BDMDC:
+   Name: lv_associado_aclinico  (LOCAL)
+   Name: lv_associado_cad       (LOCAL)
+   Name: lv_associado_hospital  (LOCAL)
+   Name: lv_associado_plano     (LOCAL)
+   Name: lv_bspsq_atz   (LOCAL)
+   Name: lv_associado_psaude    (LOCAL)
+   Name: lv_evento      (LOCAL)
+   Name: lv_evento_ope  (LOCAL)
+   Name: v_assoc        (REMOTE)

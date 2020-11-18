@@ -1,0 +1,125 @@
+*******************************************************************
+FUNCTION FI_Codifica
+LPARAM cQuem, cCodSEEK
+* Função para codificacao de carteirinha (Padrao)
+*******************************************************************
+LOCAL cCod, nSele, lWhileOK, cCodCTR, cTpContr, cFil, nPosASSOC, cDep
+LOCAL cTip
+
+lWhileOK = .T.
+*** TETE
+nSele = SELECT()
+
+DO WHILE lWhileOK
+
+   DO CASE
+
+      CASE cQuem = 'CONTRATO'
+
+      CASE cQuem = [TITULAR]
+
+         nPosASSOC = RECNO('ASSOCIADO')
+         cCodCTR  = ALLTRIM( CONTRATO.codigo)
+         cTpContr = SUBSTR(cCodCTR,3,2)
+
+         IF cTpContr $ 'FA,FN'
+            cCod = LEFT( CONTRATO.codigo,10) + '00'
+         ELSE
+            cFil = LEFT( cCodCTR,   2   )
+            cTip = SUBSTR( cCodCTR, 3,2 )
+            cCod = NovaChave( cFil, cFil+cTip, '00' )
+         ENDIF
+
+      CASE cQuem = 'DEPENDENTE'
+
+         nPosASSOC = RECNO('ASSOCIADO')
+         =PTAB( cCodSEEK, 'ASSOCIADO', 'CODIGO', .T. )
+         SELECT ASSOCIADO
+         SCAN WHILE LEFT(ASSOCIADO.codigo,10) == cCodSEEK
+            cCod = ASSOCIADO.codigo
+         ENDSCAN
+
+         ******* cDep = PADL( INT(VAL(SUBSTR( cCod, 11,2 ))) + 1, 2, '0' )
+         
+         cDep = FI_INCR_DEP( SUBSTR(cCod, 11,2 ) )
+         cCod = LEFT(cCod,10)+cDep
+
+   ENDCASE
+
+   IF cQuem = 'CONTRATO'
+      REPLACE ASSOCIADO.codigo WITH cCod IN ASSOCIADO
+   ELSE
+      IF PTAB( cCod, 'ASSOCIADO', 'CODIGO' )
+         LOOP
+      ENDIF
+      TRY 
+      GOTO nPosASSOC IN ASSOCIADO
+      CATCH
+      ENDTRY
+      REPLACE ASSOCIADO.codigo WITH cCod IN ASSOCIADO
+   ENDIF
+
+   lWhileOK = .F.
+
+ENDDO
+
+RETURN .T.
+
+ENDFUNC
+
+
+
+FUNCTION FI_INCR_DEP( _Ctd )
+LOCAL cRtn, cLetra, cStr, nCtd, cGab
+
+_Ctd = TRANSFORM( _Ctd )
+cRtn = ''
+
+IF ISALPHA(SUBSTR(_Ctd,1,2)) OR  VAL(_Ctd)>=99
+   TEXT TO cGab TEXTMERGE NOSHOW PRETEXT 4
+A0A1A2A3A4A5A6A7A8A9 B0B1B2B3B4B5B6B7B8B9 C0C1C2C3C4C5C6C7C8C9 D0D1D2D3D4D5D6D7D8D9
+E0E1E2E3E4E5E6E7E8E9 F0F1F2F3F4F5F6F7F8F9 G0G1G2G3G4G5G6G7G8G9 H0H1H2H3H4H5H6H7H8H9
+I0I1I2I3I4I5I6I7I8I9 J0J1J2J3J4J5J6J7J8J9 K0K1K2K3K4K5K6K7K8K9 L0L1L2L3L4L5L6L7L8L9
+M0M1M2M3M4M5M6M7M8M9 N0N1N2N3N4N5N6N7N8N9 O0O1O2O3O4O5O6O7O8O9 P0P1P2P3P4P5P6P7P8P9
+Q0Q1Q2Q3Q4Q5Q6Q7Q8Q9 R0R1R2R3R4R5R6R7R8R9 S0S1S2S3S4S5S6S7S8S9 T0T1T2T3T4T5T6T7T8T9
+U0U1U2U3U4U5U6U7U8U9 V0V1V2V3V4V5V6V7V8V9 W0W1W2W3W4W5W6W7W8W9 X0X1X2X3X4X5X6X7X8X9
+Y0Y1Y2Y3Y4Y5Y6Y7Y8Y9 Z0Z1Z2Z3Z4Z5Z6Z7Z8Z9
+AAABACADAEAFAGAHAIAJAKALAMANAOAPAQARASATAUAVAWAXAYAZ
+BABBBCBDBEBFBGBHBIBJBKBLBMBNBOBPBQBRBSBTBUBVBWBXBYBZ
+   ENDTEXT 
+   
+* Outras codigo ficações adicionais caso seja necessario
+*!*   0A1B2C3D4E5F6G7H6I7J8K9L
+*!*   0A1B2C3D4E5F6G7H6I7J8K9L
+*!*   0A1B2C3D4E5F6G7H6I7J8K9L
+*!*   0A1B2C3D4E5F6G7H6I7J8K9L
+*!*   0A1B2C3D4E5F6G7H6I7J8K9L
+*!*   0A1B2C3D4E5F6G7H6I7J8K9L
+*!*   0A1B2C3D4E5F6G7H6I7J8K9L
+*!*   0A1B2C3D4E5F6G7H6I7J8K9L
+*!*   0A1B2C3D4E5F6G7H6I7J8K9L
+*!*   _0_1_2_3_4_5_6_7_6_7_8_9
+*!*   0_1_2_3_4_5_6_7_6_7_8_9_
+*!*   A_B_C_D_E_F_G_H_I_J_K_L_M_N_O_P_Q_R_S_T_U_V_W_X_Y_Z_
+*!*   _A_B_C_D_E_F_G_H_I_J_K_L_M_N_O_P_Q_R_S_T_U_V_W_X_Y_Z
+
+
+   cGab = STRTRAN(cGab,CHR(13)+CHR(10),'')
+   cGab = STRTRAN(cGab,CHR(13),'')
+   cGab = STRTRAN(cGab,CHR(10),'')
+   cGab = STRTRAN(cGab,' ','')
+   
+   nPos = AT( _Ctd, cGab )
+   nPos = nPos + 2
+   
+   cRtn = SUBSTR(cGab,nPos,2)
+
+ELSE
+
+   nCtd = INT(VAL(_Ctd))
+   nCtd = nCtd + 1
+   cRtn = PADL(nCtd,2,'0')
+ 
+ENDIF
+
+RETURN cRtn

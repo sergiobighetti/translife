@@ -1,0 +1,530 @@
+<parametros>Refeferente Setembro de 2020  c/ carência de 27 dia(s) p/ faturamento 
+ Tipo Simulação   SERGIO</parametros><resumo><?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<lv_est__5ux10er5u>
+		<grupo>1</grupo>
+		<tipo>Totalização Ref. 2020/09</tipo>
+		<descricao>Simulação</descricao>
+		<situacao>All</situacao>
+		<qtd>0</qtd>
+		<valor>9528.0000</valor>
+		<perc_qtd/>
+		<perc_valor/>
+	</lv_est__5ux10er5u>
+	<lv_est__5ux10er5u>
+		<grupo>1</grupo>
+		<tipo/>
+		<descricao>Simulação</descricao>
+		<situacao>Faturado</situacao>
+		<qtd>0</qtd>
+		<valor>67.0000</valor>
+		<perc_qtd>0,00%</perc_qtd>
+		<perc_valor>0,70%</perc_valor>
+	</lv_est__5ux10er5u>
+	<lv_est__5ux10er5u>
+		<grupo>1</grupo>
+		<tipo/>
+		<descricao>Simulação</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>0</qtd>
+		<valor>9461.0000</valor>
+		<perc_qtd>0,00%</perc_qtd>
+		<perc_valor>99,30%</perc_valor>
+	</lv_est__5ux10er5u>
+	<lv_est__5ux10er5u>
+		<grupo>2</grupo>
+		<tipo>Tipo de Contrato</tipo>
+		<descricao>AREA PROTEGIDA</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>1</qtd>
+		<valor>8000.0000</valor>
+		<perc_qtd>1,49%</perc_qtd>
+		<perc_valor>84,56%</perc_valor>
+	</lv_est__5ux10er5u>
+	<lv_est__5ux10er5u>
+		<grupo>2</grupo>
+		<tipo/>
+		<descricao>FAMILIAR</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>56</qtd>
+		<valor>1461.0000</valor>
+		<perc_qtd>83,58%</perc_qtd>
+		<perc_valor>15,44%</perc_valor>
+	</lv_est__5ux10er5u>
+	<lv_est__5ux10er5u>
+		<grupo>2</grupo>
+		<tipo/>
+		<descricao>REMOÇÃO</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>10</qtd>
+		<valor>0.0000</valor>
+		<perc_qtd>14,93%</perc_qtd>
+		<perc_valor>0,00%</perc_valor>
+	</lv_est__5ux10er5u>
+	<lv_est__5ux10er5u>
+		<grupo>3</grupo>
+		<tipo>Forma Pagamento</tipo>
+		<descricao>BOLETO</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>56</qtd>
+		<valor>1461.0000</valor>
+		<perc_qtd>83,58%</perc_qtd>
+		<perc_valor>15,44%</perc_valor>
+	</lv_est__5ux10er5u>
+	<lv_est__5ux10er5u>
+		<grupo>3</grupo>
+		<tipo/>
+		<descricao>DEPOSITO</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>5</qtd>
+		<valor>8000.0000</valor>
+		<perc_qtd>7,46%</perc_qtd>
+		<perc_valor>84,56%</perc_valor>
+	</lv_est__5ux10er5u>
+	<lv_est__5ux10er5u>
+		<grupo>3</grupo>
+		<tipo/>
+		<descricao>DÉBITO EM CONTA</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>6</qtd>
+		<valor>0.0000</valor>
+		<perc_qtd>8,96%</perc_qtd>
+		<perc_valor>0,00%</perc_valor>
+	</lv_est__5ux10er5u>
+	<lv_est__5ux10er5u>
+		<grupo>4</grupo>
+		<tipo>Banco Portador</tipo>
+		<descricao>Bco: 001, Ag: 3405, c/c: 1142348 - BANCO DO BRASIL</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>2</qtd>
+		<valor>0.0000</valor>
+		<perc_qtd>2,99%</perc_qtd>
+		<perc_valor>0,00%</perc_valor>
+	</lv_est__5ux10er5u>
+	<lv_est__5ux10er5u>
+		<grupo>4</grupo>
+		<tipo/>
+		<descricao>Bco: 237, Ag: 0003, c/c: 8095-0 - BANCO BRADESCO</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>62</qtd>
+		<valor>9461.0000</valor>
+		<perc_qtd>92,54%</perc_qtd>
+		<perc_valor>100,00%</perc_valor>
+	</lv_est__5ux10er5u>
+	<lv_est__5ux10er5u>
+		<grupo>4</grupo>
+		<tipo/>
+		<descricao>Bco: 748, Ag: 3032, c/c: 03151-8 - SICRED</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>3</qtd>
+		<valor>0.0000</valor>
+		<perc_qtd>4,48%</perc_qtd>
+		<perc_valor>0,00%</perc_valor>
+	</lv_est__5ux10er5u>
+</VFPData>
+</resumo><log><?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<clog>
+		<idcontrato>14</idcontrato>
+		<codigo>01RE000009CT</codigo>
+		<nome>SULAMERIA COMPANHIA DE SEGURA SAUDE</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>18</idcontrato>
+		<codigo>01RE000008CT</codigo>
+		<nome>MEDISERVICE OPERADORA DE PLANOS DE SAUDE S A</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>47</idcontrato>
+		<codigo>01RE000011CT</codigo>
+		<nome>POSTAL SAUDE CAIXA DE ASSISTENCIA E SAUDE DOS EMPREGADOS</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>104</idcontrato>
+		<codigo>01AP000058CT</codigo>
+		<nome>EMBRAER S A</nome>
+		<detalhes>104_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>120</idcontrato>
+		<codigo>01RE000012CT</codigo>
+		<nome>PORTO SEGURO</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>121</idcontrato>
+		<codigo>01RE000013CT</codigo>
+		<nome>PROLAR ID SERVICOS MEDICOS EIRELLI</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>123</idcontrato>
+		<codigo>01RE000015CT</codigo>
+		<nome>IRMANDADE DA SANTA CASA DE MISERICORDIA DE ARARAQUARA</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>124</idcontrato>
+		<codigo>01RE000016CT</codigo>
+		<nome>VALPAMED SERVICOS DE ASSISTENCIA A SAUDE LTDA</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>125</idcontrato>
+		<codigo>01RE000017CT</codigo>
+		<nome>UNIMED TRANSPORTE AEROMEDICA MG LTDA</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>144</idcontrato>
+		<codigo>01FA000010CT</codigo>
+		<nome>AMERIS BAPTISTELLA GARCIA</nome>
+		<detalhes>144_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>147</idcontrato>
+		<codigo>01FA000013CT</codigo>
+		<nome>ANUAR DE OLIVEIRA LAUAR</nome>
+		<detalhes>147_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>148</idcontrato>
+		<codigo>01FA000014CT</codigo>
+		<nome>APARECIDA SARMENTO DA SILVA</nome>
+		<detalhes>148_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>155</idcontrato>
+		<codigo>01FA000021CT</codigo>
+		<nome>EVANGELINA MARIA DE ABREU BERALDO</nome>
+		<detalhes>155_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>159</idcontrato>
+		<codigo>01FA000025CT</codigo>
+		<nome>HELOISA DO CARMO TEIXEIRA</nome>
+		<detalhes>159_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>161</idcontrato>
+		<codigo>01FA000027CT</codigo>
+		<nome>JOSE ROBERTO DA COSTA</nome>
+		<detalhes>161_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>162</idcontrato>
+		<codigo>01FA000028CT</codigo>
+		<nome>LOURDES DOS SANTOS CARVALHO</nome>
+		<detalhes>162_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>164</idcontrato>
+		<codigo>01FA000030CT</codigo>
+		<nome>LUIZ CARLOS BRESSAN</nome>
+		<detalhes>164_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>165</idcontrato>
+		<codigo>01FA000031CT</codigo>
+		<nome>LUIZ CARLOS DA COSTA</nome>
+		<detalhes>165_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>170</idcontrato>
+		<codigo>01FA000036CT</codigo>
+		<nome>MARIA BENEDITA DE ABREU BERALDO MODE</nome>
+		<detalhes>170_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>173</idcontrato>
+		<codigo>01FA000039CT</codigo>
+		<nome>MARIA LEILA PITANGA</nome>
+		<detalhes>173_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>174</idcontrato>
+		<codigo>01FA000040CT</codigo>
+		<nome>MARIA LYDIA ALCAUSA LOPES</nome>
+		<detalhes>174_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>180</idcontrato>
+		<codigo>01FA000046CT</codigo>
+		<nome>SERGIO CLERICE</nome>
+		<detalhes>180_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>273</idcontrato>
+		<codigo>01FA000065CT</codigo>
+		<nome>SILVIA MARIA SCHMUZIGER DE CARVALHO</nome>
+		<detalhes>273_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>282</idcontrato>
+		<codigo>01RE000018CT</codigo>
+		<nome>SAO FRANCISCO SISTEMA DE SAUDE SOCIEDADE EMPRESARIA LTDA</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>289</idcontrato>
+		<codigo>01FA000071CT</codigo>
+		<nome>ADALBERTO ALVARES</nome>
+		<detalhes>289_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>290</idcontrato>
+		<codigo>01FA000072CT</codigo>
+		<nome>AMELIA ZENATTI DURANTE</nome>
+		<detalhes>290_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>292</idcontrato>
+		<codigo>01FA000074CT</codigo>
+		<nome>ARNALDO VENDRAMINI</nome>
+		<detalhes>292_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>295</idcontrato>
+		<codigo>01FA000077CT</codigo>
+		<nome>EDNAN OLIVEIRA MACHADO</nome>
+		<detalhes>295_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>297</idcontrato>
+		<codigo>01FA000079CT</codigo>
+		<nome>HERAIDES APPARECIDA VIDAL IGLESIAS</nome>
+		<detalhes>297_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>298</idcontrato>
+		<codigo>01FA000080CT</codigo>
+		<nome>IDA CASAGRANDE SCOGNAMIGLIO</nome>
+		<detalhes>298_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>300</idcontrato>
+		<codigo>01FA000082CT</codigo>
+		<nome>LAIS PEREIRA BUENO VENDRAMINI</nome>
+		<detalhes>300_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>301</idcontrato>
+		<codigo>01FA000083CT</codigo>
+		<nome>LURIS GATTAS CHARARA</nome>
+		<detalhes>301_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>302</idcontrato>
+		<codigo>01FA000084CT</codigo>
+		<nome>LUSIA GRILLO DINIZ</nome>
+		<detalhes>302_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>304</idcontrato>
+		<codigo>01FA000086CT</codigo>
+		<nome>MARIA BEATRIZ DE TOLEDO PIZA E MORGANTI</nome>
+		<detalhes>304_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>307</idcontrato>
+		<codigo>01FA000089CT</codigo>
+		<nome>MARIA DAS GRACAS CAMPOS MACHADO</nome>
+		<detalhes>307_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>308</idcontrato>
+		<codigo>01FA000090CT</codigo>
+		<nome>MARIA DO CARMO DE SOUZA PICOLO</nome>
+		<detalhes>308_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>309</idcontrato>
+		<codigo>01FA000091CT</codigo>
+		<nome>MARIA SANTANA MATTA</nome>
+		<detalhes>309_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>312</idcontrato>
+		<codigo>01FA000094CT</codigo>
+		<nome>REMEDIOS BUENO DE BARROS</nome>
+		<detalhes>312_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>313</idcontrato>
+		<codigo>01FA000095CT</codigo>
+		<nome>RITA QUEIROZ CARDOSO</nome>
+		<detalhes>313_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>314</idcontrato>
+		<codigo>01FA000142CT</codigo>
+		<nome>SOPHIA LOURDES ROMAO STAUFACKAR</nome>
+		<detalhes>314_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>316</idcontrato>
+		<codigo>01FA000098CT</codigo>
+		<nome>ADELINO FRANCO</nome>
+		<detalhes>316_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>317</idcontrato>
+		<codigo>01FA000099CT</codigo>
+		<nome>RUTH CARIBE DA ROCHA DROUET</nome>
+		<detalhes>317_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>318</idcontrato>
+		<codigo>01FA000100CT</codigo>
+		<nome>LAIS CUNHA CARVALHO SOFFNER</nome>
+		<detalhes>318_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>320</idcontrato>
+		<codigo>01FA000102CT</codigo>
+		<nome>JOAO DALBERTO GRACIOSO</nome>
+		<detalhes>320_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>322</idcontrato>
+		<codigo>01FA000104CT</codigo>
+		<nome>MARIA DE LOURDES PALLOTA SCHWARTZMAN</nome>
+		<detalhes>322_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>324</idcontrato>
+		<codigo>01FA000105CT</codigo>
+		<nome>DEOCLECIA RODRIGUES DA SILVA CAMARGO LEITE</nome>
+		<detalhes>324_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>333</idcontrato>
+		<codigo>01FA000108CT</codigo>
+		<nome>JOSE CARLOS NASSUTE</nome>
+		<detalhes>333_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>334</idcontrato>
+		<codigo>01FA000109CT</codigo>
+		<nome>ZERICO CHARANTOLA</nome>
+		<detalhes>334_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>335</idcontrato>
+		<codigo>01FA000110CT</codigo>
+		<nome>CHIMUNE ABRAHAO ZERAIB</nome>
+		<detalhes>335_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>344</idcontrato>
+		<codigo>01FA000113CT</codigo>
+		<nome>ISABEL DIAS VARELA</nome>
+		<detalhes>344_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>352</idcontrato>
+		<codigo>01FA000117CT</codigo>
+		<nome>MARIA SARTORI BALDUCCI</nome>
+		<detalhes>352_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>368</idcontrato>
+		<codigo>01FA000123CT</codigo>
+		<nome>ANGELA MARIA DE JESUS</nome>
+		<detalhes>368_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>375</idcontrato>
+		<codigo>01FA000127CT</codigo>
+		<nome>RENATO BASOLLI</nome>
+		<detalhes>375_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>384</idcontrato>
+		<codigo>01FA000131CT</codigo>
+		<nome>ANTONIA GRIFFI CARNACHIONI</nome>
+		<detalhes>384_0920      : Ja existe no Contas A Receber</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>391</idcontrato>
+		<codigo>01FA000137CT</codigo>
+		<nome>WALDETE MANHAS VERBI</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>394</idcontrato>
+		<codigo>01FA000138CT</codigo>
+		<nome>IRENE BARBIERI DE CARVALHO</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>395</idcontrato>
+		<codigo>01RE000019CT</codigo>
+		<nome>IRMANDADE DE MISERICORDIA DE JABOTICABAL</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>403</idcontrato>
+		<codigo>01FA000140CT</codigo>
+		<nome>LAERTE CARNACHIONI</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>412</idcontrato>
+		<codigo>01FA000143CT</codigo>
+		<nome>MARIA ANGELICA RANGEL FERNANDES</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>413</idcontrato>
+		<codigo>01FA000144CT</codigo>
+		<nome>EDUARDO EMILIO FRASSON</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>415</idcontrato>
+		<codigo>01FA000146CT</codigo>
+		<nome>EULINA PIRES DE SOUSA</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>422</idcontrato>
+		<codigo>01FA000147CT</codigo>
+		<nome>WALDEMAR JOSE LAURENTI</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>423</idcontrato>
+		<codigo>01FA000148CT</codigo>
+		<nome>HEZIR CARMELENGO</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>424</idcontrato>
+		<codigo>01FA000149CT</codigo>
+		<nome>LOURDES DA SILVA CRUZ FAUSTINO</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>425</idcontrato>
+		<codigo>01FA000150CT</codigo>
+		<nome>CLEBER ALEXANDRE COMPRE</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>426</idcontrato>
+		<codigo>01FA000151CT</codigo>
+		<nome>CAMILA APARECIDA VIEIRA AGUSTONI</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>430</idcontrato>
+		<codigo>01FA000152CT</codigo>
+		<nome>VENTURA DOS SANTOS</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+</VFPData>
+</log>

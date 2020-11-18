@@ -1,0 +1,2 @@
+glEscape = .t.
+return

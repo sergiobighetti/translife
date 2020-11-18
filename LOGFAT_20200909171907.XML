@@ -1,0 +1,300 @@
+<parametros>Refeferente Outubro de 2020  c/ carência de 27 dia(s) p/ faturamento 
+ Tipo Simulação   SERGIO</parametros><resumo><?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<lv_est__5ux114byf>
+		<grupo>1</grupo>
+		<tipo>Totalização Ref. 2020/10</tipo>
+		<descricao>Simulação</descricao>
+		<situacao>All</situacao>
+		<qtd>9536</qtd>
+		<valor>22.0000</valor>
+		<perc_qtd/>
+		<perc_valor/>
+	</lv_est__5ux114byf>
+	<lv_est__5ux114byf>
+		<grupo>1</grupo>
+		<tipo/>
+		<descricao>Simulação</descricao>
+		<situacao>Faturado</situacao>
+		<qtd>45</qtd>
+		<valor>22.0000</valor>
+		<perc_qtd>0,47%</perc_qtd>
+		<perc_valor>100,00%</perc_valor>
+	</lv_est__5ux114byf>
+	<lv_est__5ux114byf>
+		<grupo>1</grupo>
+		<tipo/>
+		<descricao>Simulação</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>9491</qtd>
+		<valor>0.0000</valor>
+		<perc_qtd>99,53%</perc_qtd>
+		<perc_valor>0,00%</perc_valor>
+	</lv_est__5ux114byf>
+	<lv_est__5ux114byf>
+		<grupo>2</grupo>
+		<tipo>Tipo de Contrato</tipo>
+		<descricao>AREA PROTEGIDA</descricao>
+		<situacao>Faturado</situacao>
+		<qtd>1</qtd>
+		<valor>8000.0000</valor>
+		<perc_qtd>2,22%</perc_qtd>
+		<perc_valor>84,29%</perc_valor>
+	</lv_est__5ux114byf>
+	<lv_est__5ux114byf>
+		<grupo>2</grupo>
+		<tipo/>
+		<descricao>FAMILIAR</descricao>
+		<situacao>Faturado</situacao>
+		<qtd>44</qtd>
+		<valor>1490.8000</valor>
+		<perc_qtd>97,78%</perc_qtd>
+		<perc_valor>15,71%</perc_valor>
+	</lv_est__5ux114byf>
+	<lv_est__5ux114byf>
+		<grupo>2</grupo>
+		<tipo/>
+		<descricao>FAMILIAR</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>12</qtd>
+		<valor>0.0000</valor>
+		<perc_qtd>54,55%</perc_qtd>
+		<perc_valor/>
+	</lv_est__5ux114byf>
+	<lv_est__5ux114byf>
+		<grupo>2</grupo>
+		<tipo/>
+		<descricao>REMOÇÃO</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>10</qtd>
+		<valor>0.0000</valor>
+		<perc_qtd>45,45%</perc_qtd>
+		<perc_valor/>
+	</lv_est__5ux114byf>
+	<lv_est__5ux114byf>
+		<grupo>3</grupo>
+		<tipo>Forma Pagamento</tipo>
+		<descricao>BOLETO</descricao>
+		<situacao>Faturado</situacao>
+		<qtd>44</qtd>
+		<valor>1490.8000</valor>
+		<perc_qtd>97,78%</perc_qtd>
+		<perc_valor>15,71%</perc_valor>
+	</lv_est__5ux114byf>
+	<lv_est__5ux114byf>
+		<grupo>3</grupo>
+		<tipo/>
+		<descricao>BOLETO</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>12</qtd>
+		<valor>0.0000</valor>
+		<perc_qtd>54,55%</perc_qtd>
+		<perc_valor/>
+	</lv_est__5ux114byf>
+	<lv_est__5ux114byf>
+		<grupo>3</grupo>
+		<tipo/>
+		<descricao>DEPOSITO</descricao>
+		<situacao>Faturado</situacao>
+		<qtd>1</qtd>
+		<valor>8000.0000</valor>
+		<perc_qtd>2,22%</perc_qtd>
+		<perc_valor>84,29%</perc_valor>
+	</lv_est__5ux114byf>
+	<lv_est__5ux114byf>
+		<grupo>3</grupo>
+		<tipo/>
+		<descricao>DEPOSITO</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>4</qtd>
+		<valor>0.0000</valor>
+		<perc_qtd>18,18%</perc_qtd>
+		<perc_valor/>
+	</lv_est__5ux114byf>
+	<lv_est__5ux114byf>
+		<grupo>3</grupo>
+		<tipo/>
+		<descricao>DÉBITO EM CONTA</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>6</qtd>
+		<valor>0.0000</valor>
+		<perc_qtd>27,27%</perc_qtd>
+		<perc_valor/>
+	</lv_est__5ux114byf>
+	<lv_est__5ux114byf>
+		<grupo>4</grupo>
+		<tipo>Banco Portador</tipo>
+		<descricao>Bco: 001, Ag: 3405, c/c: 1142348 - BANCO DO BRASIL</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>2</qtd>
+		<valor>0.0000</valor>
+		<perc_qtd>9,09%</perc_qtd>
+		<perc_valor/>
+	</lv_est__5ux114byf>
+	<lv_est__5ux114byf>
+		<grupo>4</grupo>
+		<tipo/>
+		<descricao>Bco: 237, Ag: 0003, c/c: 8095-0 - BANCO BRADESCO</descricao>
+		<situacao>Faturado</situacao>
+		<qtd>45</qtd>
+		<valor>9490.8000</valor>
+		<perc_qtd>100,00%</perc_qtd>
+		<perc_valor>100,00%</perc_valor>
+	</lv_est__5ux114byf>
+	<lv_est__5ux114byf>
+		<grupo>4</grupo>
+		<tipo/>
+		<descricao>Bco: 237, Ag: 0003, c/c: 8095-0 - BANCO BRADESCO</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>17</qtd>
+		<valor>0.0000</valor>
+		<perc_qtd>77,27%</perc_qtd>
+		<perc_valor/>
+	</lv_est__5ux114byf>
+	<lv_est__5ux114byf>
+		<grupo>4</grupo>
+		<tipo/>
+		<descricao>Bco: 748, Ag: 3032, c/c: 03151-8 - SICRED</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>3</qtd>
+		<valor>0.0000</valor>
+		<perc_qtd>13,64%</perc_qtd>
+		<perc_valor/>
+	</lv_est__5ux114byf>
+</VFPData>
+</resumo><log><?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<clog>
+		<idcontrato>14</idcontrato>
+		<codigo>01RE000009CT</codigo>
+		<nome>SULAMERIA COMPANHIA DE SEGURA SAUDE</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>18</idcontrato>
+		<codigo>01RE000008CT</codigo>
+		<nome>MEDISERVICE OPERADORA DE PLANOS DE SAUDE S A</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>47</idcontrato>
+		<codigo>01RE000011CT</codigo>
+		<nome>POSTAL SAUDE CAIXA DE ASSISTENCIA E SAUDE DOS EMPREGADOS</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>120</idcontrato>
+		<codigo>01RE000012CT</codigo>
+		<nome>PORTO SEGURO</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>121</idcontrato>
+		<codigo>01RE000013CT</codigo>
+		<nome>PROLAR ID SERVICOS MEDICOS EIRELLI</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>123</idcontrato>
+		<codigo>01RE000015CT</codigo>
+		<nome>IRMANDADE DA SANTA CASA DE MISERICORDIA DE ARARAQUARA</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>124</idcontrato>
+		<codigo>01RE000016CT</codigo>
+		<nome>VALPAMED SERVICOS DE ASSISTENCIA A SAUDE LTDA</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>125</idcontrato>
+		<codigo>01RE000017CT</codigo>
+		<nome>UNIMED TRANSPORTE AEROMEDICA MG LTDA</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>282</idcontrato>
+		<codigo>01RE000018CT</codigo>
+		<nome>SAO FRANCISCO SISTEMA DE SAUDE SOCIEDADE EMPRESARIA LTDA</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>391</idcontrato>
+		<codigo>01FA000137CT</codigo>
+		<nome>WALDETE MANHAS VERBI</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>394</idcontrato>
+		<codigo>01FA000138CT</codigo>
+		<nome>IRENE BARBIERI DE CARVALHO</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>395</idcontrato>
+		<codigo>01RE000019CT</codigo>
+		<nome>IRMANDADE DE MISERICORDIA DE JABOTICABAL</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>403</idcontrato>
+		<codigo>01FA000140CT</codigo>
+		<nome>LAERTE CARNACHIONI</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>412</idcontrato>
+		<codigo>01FA000143CT</codigo>
+		<nome>MARIA ANGELICA RANGEL FERNANDES</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>413</idcontrato>
+		<codigo>01FA000144CT</codigo>
+		<nome>EDUARDO EMILIO FRASSON</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>415</idcontrato>
+		<codigo>01FA000146CT</codigo>
+		<nome>EULINA PIRES DE SOUSA</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>422</idcontrato>
+		<codigo>01FA000147CT</codigo>
+		<nome>WALDEMAR JOSE LAURENTI</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>423</idcontrato>
+		<codigo>01FA000148CT</codigo>
+		<nome>HEZIR CARMELENGO</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>424</idcontrato>
+		<codigo>01FA000149CT</codigo>
+		<nome>LOURDES DA SILVA CRUZ FAUSTINO</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>425</idcontrato>
+		<codigo>01FA000150CT</codigo>
+		<nome>CLEBER ALEXANDRE COMPRE</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>426</idcontrato>
+		<codigo>01FA000151CT</codigo>
+		<nome>CAMILA APARECIDA VIEIRA AGUSTONI</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+	<clog>
+		<idcontrato>430</idcontrato>
+		<codigo>01FA000152CT</codigo>
+		<nome>VENTURA DOS SANTOS</nome>
+		<detalhes>Contrato com valor inválido (R$0,00)</detalhes>
+	</clog>
+</VFPData>
+</log>

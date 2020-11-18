@@ -1,0 +1,65 @@
+<parametros>Refeferente Setembro de 2020  c/ carência de 27 dia(s) p/ faturamento 
+ Tipo Simulação   SERGIO</parametros><resumo><?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<lv_est__5ux0upxe9>
+		<grupo>1</grupo>
+		<tipo>Totalização Ref. 2020/09</tipo>
+		<descricao>Simulação</descricao>
+		<situacao>All</situacao>
+		<qtd>43019</qtd>
+		<valor>0.0000</valor>
+		<perc_qtd/>
+		<perc_valor/>
+	</lv_est__5ux0upxe9>
+	<lv_est__5ux0upxe9>
+		<grupo>1</grupo>
+		<tipo/>
+		<descricao>Simulação</descricao>
+		<situacao>Faturado</situacao>
+		<qtd>1</qtd>
+		<valor>0.0000</valor>
+		<perc_qtd>0,00%</perc_qtd>
+		<perc_valor/>
+	</lv_est__5ux0upxe9>
+	<lv_est__5ux0upxe9>
+		<grupo>1</grupo>
+		<tipo/>
+		<descricao>Simulação</descricao>
+		<situacao>Não Fat.</situacao>
+		<qtd>43018</qtd>
+		<valor>0.0000</valor>
+		<perc_qtd>100,00%</perc_qtd>
+		<perc_valor/>
+	</lv_est__5ux0upxe9>
+	<lv_est__5ux0upxe9>
+		<grupo>2</grupo>
+		<tipo>Tipo de Contrato</tipo>
+		<descricao>COLETIVO</descricao>
+		<situacao>Faturado</situacao>
+		<qtd>1</qtd>
+		<valor>43018.1600</valor>
+		<perc_qtd>100,00%</perc_qtd>
+		<perc_valor>100,00%</perc_valor>
+	</lv_est__5ux0upxe9>
+	<lv_est__5ux0upxe9>
+		<grupo>3</grupo>
+		<tipo>Forma Pagamento</tipo>
+		<descricao>DEPOSITO</descricao>
+		<situacao>Faturado</situacao>
+		<qtd>1</qtd>
+		<valor>43018.1600</valor>
+		<perc_qtd>100,00%</perc_qtd>
+		<perc_valor>100,00%</perc_valor>
+	</lv_est__5ux0upxe9>
+	<lv_est__5ux0upxe9>
+		<grupo>4</grupo>
+		<tipo>Banco Portador</tipo>
+		<descricao>Bco: , Ag: , c/c:  -</descricao>
+		<situacao>Faturado</situacao>
+		<qtd>1</qtd>
+		<valor>43018.1600</valor>
+		<perc_qtd>100,00%</perc_qtd>
+		<perc_valor>100,00%</perc_valor>
+	</lv_est__5ux0upxe9>
+</VFPData>
+</resumo>

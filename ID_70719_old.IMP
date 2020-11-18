@@ -1,0 +1,89 @@
+*---Importação do TXT para ID 70719 (CARDBAN)
+Lparameters cTXTOrigem, cAlsRecebedor
+LOCAL  cLinha, xAno_Veiculo, xBairro, xCEP, xCPF, xCidade, xCod_Cli, xComplemento, xCor_Veiculo
+LOCAL  xDataCa, xDtNasc, xEndereco, xEstCivil, xFabr_Veiculo, xModelo_Veiculo, xNome, xNumero
+LOCAL  xPais, xPlaca, xProfissão, xRG, xRenavam, xSexo, xSit, xTelefone, xTipo_Veiculo
+LOCAL  xTitularidade, xVlSeg
+
+Local cLV_TMP, nSel, aLnh[1]
+
+nSel    = Select()
+cLV_TMP = Sys(2015)
+
+Create Cursor (cLV_TMP) ( l1 C(240), l2 C(240), l3 c(240) )
+Append From (cTXTOrigem) Sdf
+
+Select (cLV_TMP)
+Scan all
+
+   cLinha = l1+l2+l3
+
+   IF EMPTY(cLinha )
+      LOOP
+   ENDIF 
+   
+   xCod_Cli = SUBSTR( cLinha,      1,   6)
+   xDataCa = SUBSTR( cLinha,      7,   6)
+   xVlSeg = SUBSTR( cLinha,      13,   5)
+   xSit = SUBSTR( cLinha,      18,   1)
+   xNome = SUBSTR( cLinha,      19,   40)
+   xCPF = SUBSTR( cLinha,      59,   14)
+   xEndereco = SUBSTR( cLinha,      73,   60)
+   xNumero = SUBSTR( cLinha,      133,   6)
+   xComplemento = SUBSTR( cLinha,      139,   40)
+   xCidade = SUBSTR( cLinha,       179,   60)
+   xBairro = SUBSTR( cLinha,      239,   40)
+   xCEP = SUBSTR( cLinha,      279,   8)
+   xPais = SUBSTR( cLinha,      287,   6)
+   xTelefone = SUBSTR( cLinha,      293,   16)
+   xSexo = SUBSTR( cLinha,      309,   1)
+   xDtNasc = SUBSTR( cLinha,      310,   8)
+   xRG = SUBSTR( cLinha,      318,   20)
+   xEstCivil = SUBSTR( cLinha,      338,   1)
+   xProfissão = SUBSTR( cLinha,      339,   60)
+   xPlaca = SUBSTR( cLinha,      399,   7)
+   xTipo_Veiculo = SUBSTR( cLinha,      406,   20)
+   xFabr_Veiculo = SUBSTR( cLinha,      426,   25)
+   xModelo_Veiculo = SUBSTR( cLinha,      451,   25)
+   xAno_Veiculo = SUBSTR( cLinha,      476,   4)
+   xCor_Veiculo = SUBSTR( cLinha,      480,   20)
+   xRenavam = SUBSTR( cLinha,      500,   11)
+   xTitularidade = SUBSTR( cLinha,      511,   1)
+
+
+   SELECT (cAlsRecebedor)
+   APPEND BLANK
+   replace    TIPO       WITH '1'
+   replace    NOME       WITH xNome
+   replace    ENDERECO   WITH ALLTRIM(xEndereco)+','+ALLTRIM(xNumero )
+   replace    COMPLE     WITH ALLTRIM(xComplemento )
+   replace    BAIRRO     WITH ALLTRIM(xBairro )
+   replace    CEP        WITH ALLTRIM(xCEP )
+   replace    CIDADE     WITH ALLTRIM(xCidade )
+   replace    ESTADO     WITH ''
+   replace    FONE_RES   WITH ALLTRIM(xTelefone )
+   replace    FONE_COM   WITH ''
+   replace    PERTO_DE   WITH ''
+   replace    ENTRE_RUA  WITH ''
+   replace    DT_NASCIME WITH xDtNasc 
+   replace    SEXO       WITH IIF(xSexo='1','MASCULINO',IIF(xSexo='2','FEMININO',''))
+   replace    CIVIL      WITH IIF(xEstCivil='1','CASADO',IIF(xEstCivil='2', 'SOLTEIRO',;
+                              IIF( xEstCivil='3', 'DIVORCIADO', IIF( xEstCivil='4','VIUVO',;
+                              IIF(xEstCivil='5','CONCUBINATO',IIF(xEstCivil='6', 'SEPARADO',''))))))
+                               
+   replace    CPF        WITH xCPF 
+   replace    RG         WITH xRG 
+   replace    CODIGOTIT  WITH xCod_Cli 
+   replace    CODIGODEP  WITH ''
+   replace    ATEND      WITH 1
+   replace    ACAO       WITH 1
+   replace    DATABASE   WITH DTOS(DATE())
+
+
+   Go Top
+
+   Select (cLV_TMP)
+Endscan
+
+Use In (Select(cLV_TMP))
+Select (nSel)

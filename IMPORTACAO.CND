@@ -1,0 +1,100 @@
+
+*** Condição para lancamento de produto na importacao
+*** Retorna uma string contendo o(s) codigo(s) de produto a serem lancados
+
+LOCAL cProd, cRetorna as String     && declaracao de variavel
+
+cRetorna = ''
+
+IF FSIZE( 'APH', 'CTMP' ) > 0 && se existe o campo APH no arquivo
+
+   cProd = ALLTRIM(CTMP.aph)
+
+   DO case
+
+********************************************************
+*---- Contrato da COOPUS
+********************************************************
+      CASE CONTRATO.idContrato=61500 
+        
+         if  OCCURS( 'APH', cProd )  > 0
+            cRetorna = cRetorna + '  <PROD>2</PROD><VLR>0.00</VLR>'
+        endif 
+
+         if  OCCURS( 'OMT', cProd )  > 0
+            cRetorna = cRetorna + '  <PROD>18</PROD><VLR>0.00</VLR>'
+        endif 
+
+
+********************************************************
+*----- Contrato da ASSIMEDICA
+********************************************************
+      CASE CONTRATO.idContrato=61857 AND cProd  = 'OMT'
+         cRetorna = '18'    &&--- OMT
+      CASE CONTRATO.idContrato=61857 AND cProd  = 'APH'
+         cRetorna = '2'     &&--- APH   
+   
+
+********************************************************
+*----- Contrato da ASSETEJ  
+********************************************************
+    *  CASE CONTRATO.idContrato=66398 AND cProd  = 'OMT'
+    *     cRetorna = '18'    &&--- OMT
+    *  CASE CONTRATO.idContrato=66398 AND cProd  = 'APH'
+    *     cRetorna = '3'     &&--- APH
+
+
+********************************************************
+*---- Contrato da SANTA CASA SAUDE
+********************************************************
+
+
+     CASE CONTRATO.idContrato=67358 AND (OCCURS( 'DISK', STREXTRACT(cProd,'<P>','</P>') )>0 AND OCCURS(  'APH', STREXTRACT(cProd,'<P>','</P>') )>0)
+        DO CASE 
+           CASE OCCURS(  'APH0440', STREXTRACT(cProd,'<P>','</P>') )>0
+            cRetorna = '<PROD>2</PROD><VLR>2.32</VLR> , <PROD>20</PROD><VLR>0.33</VLR>'
+           CASE OCCURS(  'APH0800', STREXTRACT(cProd,'<P>','</P>') )>0
+            cRetorna = '<PROD>2</PROD><VLR>4.32</VLR> , <PROD>20</PROD><VLR>0.33</VLR>'
+         ENDCASE      
+
+     CASE CONTRATO.idContrato=67358 AND  OCCURS( 'DISK', STREXTRACT(cProd,'<P>','</P>') )>0
+         cRetorna = '<PROD>20</PROD><VLR>0.33</VLR>' 
+
+
+*!*   Desabilitado em 23/03/2016: conforme orientação de DIEGO
+*!*        CASE CONTRATO.idContrato=67358 AND (OCCURS( 'DISK', STREXTRACT(cProd,'<P>','</P>') )>0 AND OCCURS(  'APH', STREXTRACT(cProd,'<P>','</P>') )>0)
+*!*            cRetorna = '<PROD>2</PROD><VLR>2.32</VLR> , <PROD>20</PROD><VLR>0.33</VLR>' 
+*!*        CASE CONTRATO.idContrato=67358 AND  OCCURS( 'DISK', STREXTRACT(cProd,'<P>','</P>') )>0
+*!*            cRetorna = '<PROD>20</PROD><VLR>0.33</VLR>' 
+
+
+*!*      DESABILITADO EM 10/03/2016: conforme orientacao DIEGO
+*!*         CASE CONTRATO.idContrato=67358 AND (OCCURS( 'DISK', STREXTRACT(cProd,'<P>','</P>') )>0 AND OCCURS(  'APH', STREXTRACT(cProd,'<P>','</P>') )>0)
+*!*            * RETIRADO A PEDIDO DE ANGELICA EM 11/07/2012: cRetorna = '<PROD>2</PROD><VLR>2.11</VLR> , <PROD>20</PROD><VLR>0.30</VLR>' &&--- APH a R$ 2,11 e DISK a R$ 0,30
+*!*            cRetorna = '<PROD>2</PROD><VLR>2.11</VLR> , <PROD>20</PROD><VLR>0.30</VLR>' 
+*!*         CASE CONTRATO.idContrato=67358 AND  OCCURS( 'DISK', STREXTRACT(cProd,'<P>','</P>') )>0
+*!*            * RETIRADO A PEDIDO DE ANGELICA EM 11/07/2012: cRetorna = '<PROD>20</PROD><VLR>0.30</VLR>'   
+*!*            cRetorna = '<PROD>20</PROD><VLR>0.30</VLR>'   
+
+
+*!*      DESABILITADO EM 26/08/2011:
+*!*            CASE CONTRATO.idContrato=67358 AND cProd == 'DSK'
+*!*               cRetorna = '20'   &&--- DISK
+*!*            CASE CONTRATO.idContrato=67358 AND cProd == 'APH,DSK'
+*!*               cRetorna = '2,20' &&--- APH e DISK
+
+   ENDCASE 
+
+
+ELSE
+
+   ********************************************************
+   *---- Contrato da SOGELI
+   ********************************************************
+   IF CONTRATO.idContrato=66299
+      cRetorna = '3,20' &&--- APH e DISK         
+   ENDIF 
+   
+ENDIF   
+
+RETURN cRetorna   

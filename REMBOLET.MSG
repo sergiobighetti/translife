@@ -1,0 +1,15 @@
+Mesagem para linha descrititiva no boleto para remessa bancaria
+
+
+***** Mesagenm para NOSSA CAIXA
+<151>
+NAO RECEBER APOS 60 DIAS
+</151>
+
+
+
+***** Mesagem para BANESPA
+<33>
+DESC 9,90 COB ANUAL CASO NAO OPTANTE TMP
+</33>
+Incluso Tarifa Boleto Bancario 1,00
