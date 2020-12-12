@@ -90,7 +90,7 @@ DO case
       
           IF !file( cPathAviso+'ALS_TR_'+TRANSFORM(nSumID)+'.tmp' )
              =STRTOFILE( cMsgEVE, cPathAviso+'ALS_TR_'+TRANSFORM(nSumID)+'.tmp', 1 )
-             DO c:\desenv\win\vfp9\mmed\fi_notifica WITH 'Atenção! TRANSPORTE(s)!',cMsgEVE, 10 
+             DO c:\desenv\win\vfp9\translife\fi_notifica WITH 'Atenção! TRANSPORTE(s)!',cMsgEVE, 10 
           ENDIF 
       ENDIF 
        

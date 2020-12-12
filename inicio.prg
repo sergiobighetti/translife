@@ -169,8 +169,8 @@ IF FILE( 'VERSAO.TXT' )
    cVersao = FILETOSTR( 'VERSAO.TXT' )
    cVersao = STREXTRACT( cVersao, '<<','>>')
 ELSE
-   IF FILE( 'MMED.BAT' )
-   gnFileHandle = FOPEN("MMED.bat")
+   IF FILE( 'SIGAPH.BAT' )
+   gnFileHandle = FOPEN("SIGAPH.bat")
    nSize =  FSEEK(gnFileHandle, 0, 2)
    IF nSize > 0
       = FSEEK(gnFileHandle, 0, 0)
